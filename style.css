@@ -82,3 +82,87 @@ table th{
 td,th{
     padding: 4px;
 }
+
+/* الروابط */
+.navigation a {
+    color: #536abc;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #601cfc;
+}
+
+/* الأقسام */
+section {
+    padding: 80px 10%;
+}
+
+/* الخلفية */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* يخلي المحتوى في النص */
+    text-align: center; /* النص في المنتصف */
+    background: url("image/b2.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* العنوان */
+.main h2 {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* 🟢 Media Queries */
+@media (max-width: 992px) {
+    section {
+        padding: 60px 5%;
+    }
+
+    .main h2 {
+        font-size: 1.7em;
+    }
+
+    .navigation a {
+        font-size: 1em;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 50px 20px;
+    }
+
+    .main h2 {
+        font-size: 1.5em;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 40px 15px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .navigation {
+        text-align: center;
+    }
+}
+
